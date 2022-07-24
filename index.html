@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form validation</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="form-container">
+        <h4>My Form</h4>
+        <form>
+            <label for="email">
+                <span>email</span>
+                <input type="email" id="email" name="email" required>
+            </label>
+
+            <label for="country">
+                <span>country</span>
+                <input type="text" id="country" name="country">
+            </label>
+            <label for="zipcode">
+                <span>zipcode</span>
+                <input type="text" id="zipcode" name="zipcode">
+            </label>
+            <label for="password">
+                <span>password</span>
+                <input type="password" id="password" name="password">
+            </label>
+            <label for="password-con">
+                <span>confirm password</span>
+                <input type="password" id="password-con" name="password-con">
+            </label>
+        </form> 
+    </div>  
+    <script src="script.js"> </script>
+</body>
+</html>
