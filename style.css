@@ -8,6 +8,7 @@
 :root {
     --white: rgb(248, 248, 248);
     --light-blue: rgb(213, 225, 237);
+    --red: rgb(226, 87, 87);
 }
 
 body {
@@ -17,18 +18,48 @@ body {
     align-items: center;
     height: 100vh;
 }
+
 /* FORM CONTAINER */
 .form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background: var(--white);
-    height: 300px;
-    width: 400px;
-    padding: 30px;
+    width: 500px;
+    padding: 50px;
+    border-radius: 10px;
 }
 
 h4 {
-    padding-bottom: 5px;
+    padding-bottom: 10px;
+    font-size: 1.5rem;
 }
+
 label {
     display: flex;
     flex-direction: column;
+    padding: 5px 0px;
+}
+
+input {
+    border: 1.5px solid var(--light-blue);
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 3px;
+    font-size: 14px;
+}
+
+button {
+    padding: 10px 25px;
+    border: none;
+    background: var(--light-blue);
+    border-radius: 8px;
+    margin-top: 15px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.error {
+    color: var(--red);
+    padding-top: 3px;
 }

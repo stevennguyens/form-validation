@@ -13,28 +13,33 @@
 <body>
     <div class="form-container">
         <h4>My Form</h4>
-        <form>
+        <form id="form" novalidate>
             <label for="email">
                 <span>email</span>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email" required minlength="6" maxlength="30">
+                <span class="error" aria-live="polite"></span>
             </label>
 
             <label for="country">
                 <span>country</span>
-                <input type="text" id="country" name="country">
+                <input type="text" id="country" name="country" required>
+                <span class="error" aria-live="polite"></span>
             </label>
             <label for="zipcode">
                 <span>zipcode</span>
-                <input type="text" id="zipcode" name="zipcode">
+                <input type="text" id="zipcode" name="zipcode" required minlength="5" maxlength="5">
+                <span class="error" aria-live="polite"></span>
             </label>
             <label for="password">
                 <span>password</span>
-                <input type="password" id="password" name="password">
+                <input type="password" id="password" name="password" required>
+                <span class="error" aria-live="polite"></span>
             </label>
             <label for="password-con">
                 <span>confirm password</span>
-                <input type="password" id="password-con" name="password-con">
+                <input type="password" id="password-con" name="password-con" required>
             </label>
+            <button type="submit">Submit</button>
         </form> 
     </div>  
     <script src="script.js"> </script>
